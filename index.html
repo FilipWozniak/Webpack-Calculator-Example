@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Webpack </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="bundle.js"> </script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col s6">
+                <h2> Temperature Converter </h2>
+                <input placeholder="Provide a Valid Temperature Number" name="inputTemperatureValue" type="number" class="validate">
+                <button class="btn waves-effect red accent-4" id="convertTemperatureButton" type="submit" name="action"> Convert
+                    <i class="material-icons right">send</i>
+                </button>
+                <div class="row">
+                    <div class="col s6 ">
+                        <form action="#">
+                            <p>
+                                <label>
+                                    <input name="TemperatureGroupOne" value="celsius" type="radio" checked />
+                                    <span> Celsius </span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input name="TemperatureGroupOne" value="kelvin" type="radio" />
+                                    <span> Kelvin </span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input name="TemperatureGroupOne" value="fahrenheit" type="radio"  />
+                                    <span> Fahrenheit </span>
+                                </label>
+                            </p>
+                        </form>
+                    </div>
+                    <div class="col s6">
+                        <form action="#">
+                            <p>
+                                <label>
+                                    <input name="TemperatureGroupTwo" value="celsius" type="radio" checked />
+                                    <span> Celsius </span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input name="TemperatureGroupTwo" value="kelvin" type="radio" />
+                                    <span> Kelvin </span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input name="TemperatureGroupTwo" value="fahrenheit" type="radio"  />
+                                    <span> Fahrenheit </span>
+                                </label>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+                <h2 id="temperatureResult">  </h2>
+            </div>
+            <div class="col s6">
+                <h2> Distance Converter </h2>
+                <input placeholder="Provide a Valid Distance Number" name="inputDistanceValue" type="number" class="validate">
+                <button class="btn waves-effect red accent-4" id="convertDistanceButton" type="submit" name="action"> Convert
+                    <i class="material-icons right">send</i>
+                </button>
+                <div class="row">
+                    <div class="col s6">
+                        <form action="#">
+                            <p>
+                                <label>
+                                    <input name="DistanceGroupOne" value="kilometers" type="radio" checked />
+                                    <span> Kilometers </span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input name="DistanceGroupOne" value="miles" type="radio" />
+                                    <span> Miles </span>
+                                </label>
+                            </p>
+                        </form>
+                    </div>
+                    <div class="col s6">
+                        <form action="#">
+                            <p>
+                                <label>
+                                    <input name="DistanceGroupTwo" value="kilometers" type="radio" checked />
+                                    <span> Kilometers </span>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input name="DistanceGroupTwo" value="miles" type="radio" />
+                                    <span> Miles </span>
+                                </label>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+                <h2 id="distanceResult"> </h2>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
